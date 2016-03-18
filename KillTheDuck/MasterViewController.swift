@@ -9,7 +9,11 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-
+    
+    let cellIdentifier = "masterStatusCell"
+    var metrics : Array<Metric>? = nil
+    let dataGrabber = DataGrabber()
+    
     var detailViewController: DetailViewController? = nil
     var objects = [AnyObject]()
 
@@ -24,6 +28,13 @@ class MasterViewController: UITableViewController {
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+        }
+        dataGrabber.fetchMetrics() { metrics in
+            debugPrint("Received \(metrics.count) metric(s)")
+            self.metrics = metrics
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.tableView.reloadData()
+            })
         }
     }
 
@@ -58,21 +69,33 @@ class MasterViewController: UITableViewController {
     }
 
     // MARK: - Table View
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)!
+        
+        if let statusCell = cell as? StatusCell {
+            let metric = self.metrics![indexPath.row]
+            statusCell.nameLabel.text = metric.name
+            self.dataGrabber.fetchEndpointData(NSURL(string: metric.endpoint)!) { system in
+                debugPrint("System \(system.name) with status \(system.status) received at row \(indexPath.row)")
+                statusCell.statusLabel.text = system.status
+            }
+        }
+        
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var count = 0
+        if let tmpMetrics = metrics {
+            count = tmpMetrics.count
+        }
+        return count
+    }
+
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
-        return cell
     }
 
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

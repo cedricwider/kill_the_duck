@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252B1BC49FCD2E73669C8551 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FDC887FBA2A9431449E849 /* Pods.framework */; };
 		808840FD1C9BF1A00012972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808840FC1C9BF1A00012972A /* AppDelegate.swift */; };
 		808840FF1C9BF1A00012972A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808840FE1C9BF1A00012972A /* MasterViewController.swift */; };
 		808841011C9BF1A00012972A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841001C9BF1A00012972A /* DetailViewController.swift */; };
@@ -15,6 +16,18 @@
 		808841091C9BF1A00012972A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808841071C9BF1A00012972A /* LaunchScreen.storyboard */; };
 		808841141C9BF1A00012972A /* KillTheDuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841131C9BF1A00012972A /* KillTheDuckTests.swift */; };
 		8088411F1C9BF1A00012972A /* KillTheDuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088411E1C9BF1A00012972A /* KillTheDuckUITests.swift */; };
+		8088412D1C9BFEAF0012972A /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088412C1C9BFEAF0012972A /* System.swift */; };
+		8088412E1C9BFEAF0012972A /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088412C1C9BFEAF0012972A /* System.swift */; };
+		8088412F1C9BFEAF0012972A /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088412C1C9BFEAF0012972A /* System.swift */; };
+		808841311C9C00D90012972A /* DataGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841301C9C00D90012972A /* DataGrabber.swift */; };
+		808841321C9C00D90012972A /* DataGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841301C9C00D90012972A /* DataGrabber.swift */; };
+		808841331C9C00D90012972A /* DataGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841301C9C00D90012972A /* DataGrabber.swift */; };
+		808841351C9C04680012972A /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841341C9C04680012972A /* StatusCell.swift */; };
+		808841361C9C04680012972A /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841341C9C04680012972A /* StatusCell.swift */; };
+		808841371C9C04680012972A /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808841341C9C04680012972A /* StatusCell.swift */; };
+		80F99F641C9C4AB7001C5736 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F99F631C9C4AB7001C5736 /* Metric.swift */; };
+		80F99F651C9C4AB7001C5736 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F99F631C9C4AB7001C5736 /* Metric.swift */; };
+		80F99F661C9C4AB7001C5736 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F99F631C9C4AB7001C5736 /* Metric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AE2ED7E12951D8978D08268 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		808840F91C9BF1A00012972A /* KillTheDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KillTheDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808840FC1C9BF1A00012972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808840FE1C9BF1A00012972A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +63,12 @@
 		8088411A1C9BF1A00012972A /* KillTheDuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KillTheDuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8088411E1C9BF1A00012972A /* KillTheDuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillTheDuckUITests.swift; sourceTree = "<group>"; };
 		808841201C9BF1A00012972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8088412C1C9BFEAF0012972A /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		808841301C9C00D90012972A /* DataGrabber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGrabber.swift; sourceTree = "<group>"; };
+		808841341C9C04680012972A /* StatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
+		80F99F631C9C4AB7001C5736 /* Metric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
+		929AA191029A1F3C8899F8DD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F6FDC887FBA2A9431449E849 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252B1BC49FCD2E73669C8551 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6239CB0B9FAFADE2D40F48F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6FDC887FBA2A9431449E849 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		808840F01C9BF1A00012972A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				808841121C9BF1A00012972A /* KillTheDuckTests */,
 				8088411D1C9BF1A00012972A /* KillTheDuckUITests */,
 				808840FA1C9BF1A00012972A /* Products */,
+				8A8793D3234C1D5271A74E1D /* Pods */,
+				6239CB0B9FAFADE2D40F48F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +137,10 @@
 				808841051C9BF1A00012972A /* Assets.xcassets */,
 				808841071C9BF1A00012972A /* LaunchScreen.storyboard */,
 				8088410A1C9BF1A00012972A /* Info.plist */,
+				8088412C1C9BFEAF0012972A /* System.swift */,
+				808841301C9C00D90012972A /* DataGrabber.swift */,
+				808841341C9C04680012972A /* StatusCell.swift */,
+				80F99F631C9C4AB7001C5736 /* Metric.swift */,
 			);
 			path = KillTheDuck;
 			sourceTree = "<group>";
@@ -128,6 +163,15 @@
 			path = KillTheDuckUITests;
 			sourceTree = "<group>";
 		};
+		8A8793D3234C1D5271A74E1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AE2ED7E12951D8978D08268 /* Pods.debug.xcconfig */,
+				929AA191029A1F3C8899F8DD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 808841231C9BF1A00012972A /* Build configuration list for PBXNativeTarget "KillTheDuck" */;
 			buildPhases = (
+				CD5B0C863C348D85F8AD90B2 /* Check Pods Manifest.lock */,
 				808840F51C9BF1A00012972A /* Sources */,
 				808840F61C9BF1A00012972A /* Frameworks */,
 				808840F71C9BF1A00012972A /* Resources */,
+				49CF5CB32CDB697660886DFC /* Embed Pods Frameworks */,
+				A4DFF29D1A0413F429BF4D58 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +243,7 @@
 				TargetAttributes = {
 					808840F81C9BF1A00012972A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = TPU7SUQ7F7;
 					};
 					8088410E1C9BF1A00012972A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -254,14 +302,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49CF5CB32CDB697660886DFC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DFF29D1A0413F429BF4D58 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5B0C863C348D85F8AD90B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		808840F51C9BF1A00012972A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8088412D1C9BFEAF0012972A /* System.swift in Sources */,
 				808841011C9BF1A00012972A /* DetailViewController.swift in Sources */,
 				808840FF1C9BF1A00012972A /* MasterViewController.swift in Sources */,
+				808841311C9C00D90012972A /* DataGrabber.swift in Sources */,
 				808840FD1C9BF1A00012972A /* AppDelegate.swift in Sources */,
+				80F99F641C9C4AB7001C5736 /* Metric.swift in Sources */,
+				808841351C9C04680012972A /* StatusCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +369,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808841321C9C00D90012972A /* DataGrabber.swift in Sources */,
+				8088412E1C9BFEAF0012972A /* System.swift in Sources */,
+				80F99F651C9C4AB7001C5736 /* Metric.swift in Sources */,
 				808841141C9BF1A00012972A /* KillTheDuckTests.swift in Sources */,
+				808841361C9C04680012972A /* StatusCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808841331C9C00D90012972A /* DataGrabber.swift in Sources */,
+				8088412F1C9BFEAF0012972A /* System.swift in Sources */,
+				80F99F661C9C4AB7001C5736 /* Metric.swift in Sources */,
 				8088411F1C9BF1A00012972A /* KillTheDuckUITests.swift in Sources */,
+				808841371C9C04680012972A /* StatusCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,8 +507,10 @@
 		};
 		808841241C9BF1A00012972A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE2ED7E12951D8978D08268 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KillTheDuck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplificator.KillTheDuck;
@@ -410,8 +520,10 @@
 		};
 		808841251C9BF1A00012972A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929AA191029A1F3C8899F8DD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KillTheDuck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplificator.KillTheDuck;
@@ -486,6 +598,7 @@
 				808841251C9BF1A00012972A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		808841261C9BF1A00012972A /* Build configuration list for PBXNativeTarget "KillTheDuckTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +607,7 @@
 				808841281C9BF1A00012972A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		808841291C9BF1A00012972A /* Build configuration list for PBXNativeTarget "KillTheDuckUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +616,7 @@
 				8088412B1C9BF1A00012972A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
