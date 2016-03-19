@@ -66,11 +66,23 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
             statusCell.nameLabel.text = metric.name
             self.dataGrabber.fetchEndpointData(NSURL(string: metric.endpoint)!) { system in
                 debugPrint("System \(system.name) with status \(system.status) received at row \(indexPath.row)")
-                statusCell.statusLabel.text = system.status
+                statusCell.statusImage.image = self.getImageForStatus(system.status)
             }
         }
         return cell
     }
+    
+    func getImageForStatus(status: System.Status) -> UIImage {
+        switch status {
+        case .OK:
+            return UIImage(named: "green_dot")!
+        case .WARNING:
+            return UIImage(named: "yellow_dot")!
+        default:
+            return UIImage(named: "red_dot")!
+        }
+    }
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let metrics = self.metrics {

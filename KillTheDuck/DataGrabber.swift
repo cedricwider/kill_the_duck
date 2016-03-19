@@ -24,17 +24,6 @@ class DataGrabber {
         })
     }
     
-    
-    func fetchStatusFor(metric: Metric, callback: (System) -> Void) {
-        Alamofire.request(.GET, NSURL(string: metric.endpoint)!).responseData( { response in
-            if let json : NSDictionary = self.jsonAsDictionary(response.data!) {
-                let dataDict = json["data"] as! NSDictionary
-                callback(System(state: dataDict["status"] as! String, name: json["key"] as! String))
-            }
-        })
-    }
-    
-    
     func extractMetricsFromResponse(jsonData: NSData) -> Array<Metric> {
         var retVal = Array<Metric>()
         if let json: NSDictionary = jsonAsDictionary(jsonData) {

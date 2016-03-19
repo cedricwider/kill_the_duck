@@ -10,12 +10,27 @@ import Foundation
 
 class System {
     
-    var status : String
+    enum Status : String {
+        case OK = "okay",
+            WARNING = "warning",
+            ERROR = "error"
+    }
+    
+    var status : Status
     var name : String
     
     init(state : String, name: String) {
-        self.status = state
         self.name = name
-    }		
+        if let state = Status(rawValue: state) {
+            self.status = state
+        } else {
+            self.status = .ERROR
+        }
+    }
+    
+    init(status: Status, name: String) {
+        self.name = name
+        self.status = status
+    }
 }
 

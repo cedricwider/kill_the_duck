@@ -32,34 +32,34 @@
                                         <rect key="frame" x="0.0" y="50" width="600" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FjV-gY-keh" id="ZaF-UR-Omn">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="78"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPW-up-X7h" userLabel="Name">
-                                                    <rect key="frame" x="8" y="28" width="424" height="21"/>
+                                                    <rect key="frame" x="8" y="29" width="424" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w28-3b-m7W">
-                                                    <rect key="frame" x="440" y="28" width="152" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_dot" translatesAutoresizingMaskIntoConstraints="NO" id="2YZ-iK-YRY">
+                                                    <rect key="frame" x="558" y="30" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="LvI-GO-g8X"/>
+                                                        <constraint firstAttribute="width" constant="20" id="vXI-cl-wVX"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="w28-3b-m7W" firstAttribute="trailing" secondItem="ZaF-UR-Omn" secondAttribute="trailingMargin" id="35A-ls-yuO"/>
                                                 <constraint firstItem="NPW-up-X7h" firstAttribute="centerY" secondItem="ZaF-UR-Omn" secondAttribute="centerY" id="4ip-RX-4EZ"/>
+                                                <constraint firstItem="2YZ-iK-YRY" firstAttribute="centerY" secondItem="NPW-up-X7h" secondAttribute="centerY" id="5wY-vc-BlL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="2YZ-iK-YRY" secondAttribute="trailing" constant="14" id="Dvv-9H-lFk"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="NPW-up-X7h" secondAttribute="trailing" constant="160" id="E5X-ia-qBX"/>
-                                                <constraint firstItem="w28-3b-m7W" firstAttribute="centerY" secondItem="ZaF-UR-Omn" secondAttribute="centerY" id="ErY-Hp-7dO"/>
                                                 <constraint firstItem="NPW-up-X7h" firstAttribute="leading" secondItem="ZaF-UR-Omn" secondAttribute="leadingMargin" id="M3z-g1-JFn"/>
-                                                <constraint firstItem="w28-3b-m7W" firstAttribute="leading" secondItem="NPW-up-X7h" secondAttribute="trailing" constant="8" id="j3L-5w-LtW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="NPW-up-X7h" id="3HZ-zP-uvX"/>
-                                            <outlet property="statusLabel" destination="w28-3b-m7W" id="Y0f-Vw-FcT"/>
+                                            <outlet property="statusImage" destination="2YZ-iK-YRY" id="2iF-Z9-Zk4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -88,4 +88,7 @@
             <point key="canvasLocation" x="892" y="-103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="green_dot" width="25" height="25"/>
+    </resources>
 </document>
